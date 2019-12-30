@@ -1,0 +1,13 @@
+@mixin roboto($weight) {
+  @if $weight == 'r' {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+}
+
+@mixin montserrat($weight) {
+  @if $weight == 'b' {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+}

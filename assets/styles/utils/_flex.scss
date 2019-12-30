@@ -1,0 +1,42 @@
+.u-flex {
+  display: flex;
+}
+
+.u-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-aifs {
+  align-items: flex-start;
+}
+
+.u-aife {
+  align-items: flex-end;
+}
+
+.u-aic {
+  align-items: center;
+}
+
+.u-jcfs {
+  justify-content: flex-start;
+}
+
+.u-jcfe {
+  justify-content: flex-end;
+}
+
+.u-jcsb {
+  justify-content: space-between;
+}
+
+.u-fxw {
+  flex-wrap: wrap;
+}
+
+.u-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

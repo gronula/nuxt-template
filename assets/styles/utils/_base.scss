@@ -1,0 +1,29 @@
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.only-mobile {
+  @include respond-max(tablet)
+    display: flex !important;
+
+  @include respond-min(tablet) {
+    display: none !important;
+  }
+}
+
+.only-desktop {
+  @include respond-max(tablet)
+    display: none !important;
+
+  @include respond-min(tablet) {
+    display: flex !important;
+  }
+}
+
+.trs {
+  transition: $trs;
+}
+
+.shadow {
+  box-shadow: $shadow;
+}

@@ -1,0 +1,97 @@
+/* Headings */
+
+.t-h1 {
+  @include montserrat('b');
+  font-size: 3.6rem; // 36px
+  line-height: 1.185;
+
+  @include respond-min(tablet) {
+    font-size: 3rem; // 48px
+  }
+}
+
+.t-h2 {
+  @include montserrat('b');
+  font-size: 2.25rem; // 27px
+  line-height: 1.2;
+
+  @include respond-min(tablet) {
+    font-size: 2.25rem; // 36px
+  }
+}
+
+.t-h3 {
+  @include montserrat('sb');
+  font-size: 1.6rem; // 16px
+  line-height: 1.4375;
+
+  @include respond-min(tablet) {
+    font-size: 1.6875rem; // 27px
+    line-height: 1.2;
+  }
+}
+
+.t-h4 {
+  @include montserrat('sb');
+  font-size: 0.917rem; // 11px
+  line-height: 1.2;
+
+  @include respond-min(tablet) {
+    font-size: 1.125rem; // 18px
+  }
+}
+
+.t-h5 {
+  @include montserrat('sb');
+  font-size: 1.167rem; // 14px
+  line-height: 1.2;
+
+  @include respond-min(tablet) {
+    font-size: 1rem; // 16px
+  }
+}
+
+.t-h6 {
+  @include montserrat('m');
+  font-size: 1.25rem; // 15px
+  line-height: 1.2;
+
+  @include respond-min(tablet) {
+    font-size: 0.9375rem; // 15px
+  }
+}
+
+
+/* Text */
+
+.t-small {
+  @include roboto('r');
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  @include respond-min(tablet) {
+    font-size: 0.75rem;
+  }
+}
+
+.t-normal {
+  @include roboto('r');
+  font-size: 1.25rem;
+  line-height: 1.2;
+
+  @include respond-min(tablet) {
+    font-size: 0.875rem;
+  }
+}
+
+
+/* Style */
+
+.t-ttu {
+  text-transform: uppercase;
+}
+
+.t-tdn {
+  text-decoration: none;
+}
