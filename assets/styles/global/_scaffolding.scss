@@ -5,6 +5,11 @@
 }
 
 html {
+  @include fluid(font-size, (
+    $mobile: 10px,
+    $tablet: 16px,
+    $desktop-fhd: 20px
+  ));
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -26,6 +31,30 @@ h4,
 h5,
 h6 {
   @include montserrat('b');
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
 }
 
 a {

@@ -1,3 +1,23 @@
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}
+
 .no-scroll {
   overflow: hidden !important;
 }
@@ -17,6 +37,26 @@
 
   @include respond-min(tablet) {
     display: flex !important;
+  }
+}
+
+.wrapper-p {
+  padding-left: $offset-mobile;
+  padding-right: $offset-mobile;
+
+  @include respond-min(tablet) {
+    padding-left: $offset-desktop;
+    padding-right: $offset-desktop;
+  }
+}
+
+.wrapper-m {
+  margin-left: $offset-mobile;
+  margin-right: $offset-mobile;
+
+  @include respond-min(tablet) {
+    margin-left: $offset-desktop;
+    margin-right: $offset-desktop;
   }
 }
 

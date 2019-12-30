@@ -41,6 +41,9 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
+  styleResources: {
+    scss: ['@/assets/styles/utils/_variables.scss'],
+  },
   plugins: ['@/plugins/base-components'],
   /*
    ** Nuxt.js dev-modules
@@ -61,6 +64,7 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources',
   ],
   /*
    ** Axios module configuration
@@ -79,5 +83,10 @@ export default {
   server: {
     port: 8000,
     host: '0.0.0.0',
+  },
+  pageTransition: {
+    name: 'fade-v',
+    mode: 'out-in',
+    appear: true,
   },
 }

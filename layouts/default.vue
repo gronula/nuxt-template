@@ -1,14 +1,14 @@
 <template lang="pug">
-  div
-    Navigation
+  div.wrapper-p
+    Header
     nuxt
 </template>
 
 <script>
-  import Navigation from '~/components/Navigation'
+  import Header from '~/components/common/Header'
   export default {
     components: {
-      Navigation,
+      Header,
     },
   }
 </script>

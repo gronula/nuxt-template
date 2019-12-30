@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h1 About page
+    h2 About page
 </template>
 
 <script>
@@ -9,4 +9,9 @@
   }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
