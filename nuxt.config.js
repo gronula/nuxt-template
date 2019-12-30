@@ -61,7 +61,6 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    // '@bazzite/nuxt-optimized-images',
   ],
   /*
    ** Axios module configuration
@@ -76,7 +75,6 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
-    // plugins: [new ImageminWebpWebpackPlugin()],
   },
   server: {
     port: 8000,

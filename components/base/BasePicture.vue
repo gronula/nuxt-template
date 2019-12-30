@@ -2,33 +2,33 @@
   div
     picture
       source(
-        v-if="needWebp"
+        v-if="webp"
         type=`image/webp`
         :media="`(min-width: ${minScreenWidth})`"
         :srcset="`\
-          ${require(`~/assets/img/${desktopName}${needRetina ? `@1x` : ``}.${desktopExtension}?webp`)}${needRetina ? ` 1x` : ``}, \
-          ${require(`~/assets/img/${desktopName}${needRetina ? `@2x` : ``}.${desktopExtension}?webp`)}${needRetina ? ` 2x` : ``}`"
+          ${require(`~/assets/img/${desktopName}${retina ? `@1x` : ``}.${desktopExtension}?webp`)}${retina ? ` 1x` : ``}, \
+          ${require(`~/assets/img/${desktopName}${retina ? `@2x` : ``}.${desktopExtension}?webp`)}${retina ? ` 2x` : ``}`"
       )
       source(
-        v-if="needWebp"
+        v-if="webp"
         type=`image/webp`
         :srcset="`\
-          ${require(`~/assets/img/${mobileName}${needRetina ? `@1x` : ``}.${mobileExtension}?webp`)}${needRetina ? ` 1x` : ``}, \
-          ${require(`~/assets/img/${mobileName}${needRetina ? `@2x` : ``}.${mobileExtension}?webp`)}${needRetina ? ` 2x` : ``}`"
+          ${require(`~/assets/img/${mobileName}${retina ? `@1x` : ``}.${mobileExtension}?webp`)}${retina ? ` 1x` : ``}, \
+          ${require(`~/assets/img/${mobileName}${retina ? `@2x` : ``}.${mobileExtension}?webp`)}${retina ? ` 2x` : ``}`"
       )
       source(
         :media="`(min-width: ${minScreenWidth})`"
         :srcset="`\
-          ${require(`~/assets/img/${desktopName}${needRetina ? `@1x` : ``}.${desktopExtension}`)}${needRetina ? ` 1x` : ``}, \
-          ${require(`~/assets/img/${desktopName}${needRetina ? `@2x` : ``}.${desktopExtension}`)}${needRetina ? ` 2x` : ``}`"
+          ${require(`~/assets/img/${desktopName}${retina ? `@1x` : ``}.${desktopExtension}`)}${retina ? ` 1x` : ``}, \
+          ${require(`~/assets/img/${desktopName}${retina ? `@2x` : ``}.${desktopExtension}`)}${retina ? ` 2x` : ``}`"
       )
       img.picture__img.trs(
         :class="imgClass"
         :src="`\
-          ${require(`~/assets/img/${mobileName}${needRetina ? `@1x` : ``}.${mobileExtension}`)}`"
+          ${require(`~/assets/img/${mobileName}${retina ? `@1x` : ``}.${mobileExtension}`)}`"
         :srcset="`\
-          ${require(`~/assets/img/${mobileName}${needRetina ? `@1x` : ``}.${mobileExtension}`)}${needRetina ? ` 1x` : ``}, \
-          ${require(`~/assets/img/${mobileName}${needRetina ? `@2x` : ``}.${mobileExtension}`)}${needRetina ? ` 2x` : ``}`"
+          ${require(`~/assets/img/${mobileName}${retina ? `@1x` : ``}.${mobileExtension}`)}${retina ? ` 1x` : ``}, \
+          ${require(`~/assets/img/${mobileName}${retina ? `@2x` : ``}.${mobileExtension}`)}${retina ? ` 2x` : ``}`"
         :alt="`${alt}`"
       )
 </template>
@@ -60,11 +60,11 @@
         type: String,
         default: `png`,
       },
-      needWebp: {
+      webp: {
         type: Boolean,
         default: true,
       },
-      needRetina: {
+      retina: {
         type: Boolean,
         default: true,
       },
