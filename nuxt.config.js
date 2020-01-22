@@ -49,22 +49,19 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
+    '@nuxtjs/eslint-module', // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/stylelint-module', // Doc: https://github.com/nuxt-community/stylelint-module
     '@bazzite/nuxt-optimized-images',
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    '@nuxtjs/axios', // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    '@nuxtjs/dotenv', // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/style-resources',
+    '@nuxtjs/svg-sprite',
   ],
   /*
    ** Axios module configuration
@@ -88,5 +85,8 @@ export default {
     name: 'fade-v',
     mode: 'out-in',
     appear: true,
+  },
+  svgSprite: {
+    input: '~/assets/sprite/',
   },
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
   header
-    h1: nuxt-link.clr-black(to='/') Nuxt Project
+    h1: nuxt-link.clr-black(to='/')
     Navigation
 </template>
 
